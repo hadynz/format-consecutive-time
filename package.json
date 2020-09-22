@@ -1,0 +1,58 @@
+{
+  "name": "format-consecutive-time",
+  "version": "0.0.1",
+  "description": "Format calendar days and months in words",
+  "engines": {
+    "node": ">= 12.13 <13"
+  },
+  "author": "Hady Osman <hadyos@gmail.com>",
+  "license": "Apache-2.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "repository": "github:hadynz/format-consecutive-time",
+  "scripts": {
+    "clean": "rimraf coverage build tmp package *.tgz",
+    "build": "tsc -p tsconfig.release.json",
+    "build:watch": "tsc -w -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "npm run lint && jest --coverage",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm test",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "tslib": "~1.10.0"
+  },
+  "devDependencies": {
+    "@types/jest": "~24.0.25",
+    "@types/node": "~12.12.22",
+    "@typescript-eslint/eslint-plugin": "~2.14.0",
+    "@typescript-eslint/parser": "~2.14.0",
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "~6.9.0",
+    "eslint-plugin-jest": "~23.2.0",
+    "jest": "~24.9.0",
+    "prettier": "~1.19.1",
+    "rimraf": "~3.0.0",
+    "ts-jest": "~24.2.0",
+    "tsutils": "~3.17.0",
+    "typescript": "~3.7.4"
+  },
+  "keywords": [
+    "array",
+    "month",
+    "day",
+    "index",
+    "consecutive",
+    "calendar",
+    "group_by",
+    "group",
+    "pretty",
+    "format",
+    "formatDay",
+    "formatMonth"
+  ]
+}
