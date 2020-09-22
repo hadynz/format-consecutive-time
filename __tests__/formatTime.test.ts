@@ -17,6 +17,7 @@ describe('formatMonths', () => {
     expect(formatMonths([4, 1, 7, 3])).toEqual('Jan & Mar/Apr & Jul');
     expect(formatMonths([1, 2, 3, 6])).toEqual('Jan to Mar & Jun');
     expect(formatMonths([1, 2, 3, 6, 7])).toEqual('Jan to Mar & Jun/Jul');
+    expect(formatMonths([1, 2, 3, 4, 12, 11])).toEqual('Nov to Apr');
   });
 });
 

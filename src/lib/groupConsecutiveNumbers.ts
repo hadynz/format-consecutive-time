@@ -13,7 +13,7 @@
  * @param array
  */
 export const groupConsecutiveNumbers = (array: number[]): number[][] => {
-  const sortedArray = [...array].sort();
+  const sortedArray = [...array].sort((a, b) => a - b);
 
   return sortedArray.reduce((r, n) => {
     const lastSubArray = r[r.length - 1];

@@ -1,6 +1,6 @@
 {
   "name": "format-consecutive-time",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Format calendar days and months in words",
   "engines": {
     "node": ">= 12.13 <13"
