@@ -27,5 +27,7 @@
     "prettier",
     "prettier/@typescript-eslint"
   ],
-  "rules": {}
+  "rules": {
+    "jest/no-focused-tests": "warn"
+  }
 }

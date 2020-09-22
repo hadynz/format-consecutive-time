@@ -54,5 +54,8 @@
     "format",
     "formatDay",
     "formatMonth"
-  ]
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  }
 }
