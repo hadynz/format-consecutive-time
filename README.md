@@ -42,11 +42,13 @@ formatMonths([1, 2, 3, 4, 12, 11]); // "Nov to Apr"
 
 ## API Reference
 
-<a name="formatDays" href="#formatDays">#</a> <b>formatDays</b>(<i>unorderedDaysArray</i>) [<>](1)
+<a name="formatDays" href="#formatDays">#</a> <b>formatDays</b>(<i>unorderedDaysArray</i>) [<>][1]
 
-formatMonths
-groupByConsecutiveDays
-groupByConsecutiveMonths
+<a name="formatMonths" href="#formatMonths">#</a> <b>formatMonths</b>(<i>unorderedMonthsArray</i>) [<>][2]
+
+<a name="groupByConsecutiveDays" href="#groupByConsecutiveDays">#</a> <b>groupByConsecutiveDays</b>(<i>days</i>) [<>][3]
+
+<a name="groupByConsecutiveMonths" href="#groupByConsecutiveMonths">#</a> <b>groupByConsecutiveMonths</b>(<i>months</i>) [<>][4]
 
 ## License
 
@@ -54,3 +56,6 @@ MIT © [Hady Osman](https://github.com/hadynz)
 
 [node-typescript-boilerplate]: https://github.com/jsynowiec/node-typescript-boilerplate
 [1]: https://github.com/hadynz/format-consecutive-time/blob/master/src/lib/formatTime.ts#L85-L98
+[2]: https://github.com/hadynz/format-consecutive-time/blob/master/src/lib/formatTime.ts#L70-L83
+[3]: https://github.com/hadynz/format-consecutive-time/blob/master/src/lib/groupByConsecutiveTime.ts#L24-L38
+[4]: https://github.com/hadynz/format-consecutive-time/blob/master/src/lib/groupByConsecutiveTime.ts#L40-L54
