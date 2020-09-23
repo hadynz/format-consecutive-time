@@ -46,9 +46,9 @@ formatMonths([1, 2, 3, 4, 12, 11]); // "Nov to Apr"
 
 <a name="formatMonths" href="#formatMonths">#</a> <b>formatMonths</b>(<i>unorderedMonthsArray</i>) [<>][2]
 
-<a name="groupByConsecutiveDays" href="#groupByConsecutiveDays">#</a> <b>groupByConsecutiveDays</b>(<i>days</i>) [<>][3]
+<a name="groupByConsecutiveDays" href="#groupByConsecutiveDays">#</a> <b>groupByConsecutiveDays</b>(<i>orderedDaysArray</i>) [<>][3]
 
-<a name="groupByConsecutiveMonths" href="#groupByConsecutiveMonths">#</a> <b>groupByConsecutiveMonths</b>(<i>months</i>) [<>][4]
+<a name="groupByConsecutiveMonths" href="#groupByConsecutiveMonths">#</a> <b>groupByConsecutiveMonths</b>(<i>orderedMonthsArray</i>) [<>][4]
 
 ## License
 
