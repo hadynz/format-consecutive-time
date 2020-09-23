@@ -6,7 +6,7 @@
 
 # group-consecutive-time
 
-Format calendar days and months for pretty display.
+Format a list of calendar days or months into words for easy readability.
 
 This module was built using the excellent [node-typescript-boilerplate].
 
@@ -16,8 +16,41 @@ This module was built using the excellent [node-typescript-boilerplate].
 npm install --save format-consecutive-time
 ```
 
+## Usage
+
+Format an unordered array of day indices into words:
+```js
+import { formatDays } from 'format-consecutive-time';
+
+formatDays([4, 1, 7, 3]); // "Sun/Mon & Wed/Thu"
+
+formatDays([1, 2, 3, 6]); // "Mon to Wed & Sat"
+
+formatDays([1, 2, 3, 6, 7]); // "Sat to Wed"
+```
+
+Format an unordered array of month indices into words:
+```js
+import { formatMonths } from 'format-consecutive-time';
+
+formatMonths([4, 1, 7, 3]); // "Jan & Mar/Apr & Jul"
+
+formatMonths([1, 2, 3, 6, 7]); // "Jan to Mar & Jun/Jul"
+
+formatMonths([1, 2, 3, 4, 12, 11]); // "Nov to Apr"
+```
+
+## API Reference
+
+<a name="formatDays" href="#formatDays">#</a> <b>formatDays</b>(<i>unorderedDaysArray</i>) [<>](1)
+
+formatMonths
+groupByConsecutiveDays
+groupByConsecutiveMonths
+
 ## License
 
 MIT © [Hady Osman](https://github.com/hadynz)
 
 [node-typescript-boilerplate]: https://github.com/jsynowiec/node-typescript-boilerplate
+[1]: https://github.com/hadynz/format-consecutive-time/blob/master/src/lib/formatTime.ts#L85-L98
